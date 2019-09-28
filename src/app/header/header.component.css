@@ -13,7 +13,7 @@ nav {
 
 nav li {
   list-style: none;
-  padding: 1em 2em;
+  padding: 0.9em 2em;
   transition-duration: 0.2s;
 }
 
