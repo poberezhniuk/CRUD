@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+
+tr.mat-row:hover {
+  background-color: #006eff13;
+}
+
+mat-form-field.mat-form-field {
+  width: 100%;
+  padding: 0.2em 1em;
+}
+
+td.mat-column-edit > button {
+  margin-right: 1em;
+}
+
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.addButton {
+  margin: 1em;
+  padding: 0 4em;
+}

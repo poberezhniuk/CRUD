@@ -1,0 +1,114 @@
+<h2 mat-dialog-title>Create user</h2>
+
+<mat-dialog-content [formGroup]="userForm" class="mat-dialog-content-edit">
+  <mat-form-field hintLabel="Max 15 characters">
+    <input
+      matInput
+      #inputUsername
+      maxlength="15"
+      placeholder="Username"
+      formControlName="userName"
+      [(ngModel)]="user.userName"
+      required
+    />
+    <mat-error *ngIf="userControls.userName.invalid">
+      {{ getErrorMessage("userName") }}
+    </mat-error>
+    <mat-hint align="end">{{ inputUsername.value?.length || 0 }}/15</mat-hint>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      #inputName
+      maxlength="25"
+      placeholder="Name"
+      formControlName="name"
+      [(ngModel)]="user.name"
+      required
+    />
+    <mat-error *ngIf="userControls.name.invalid">
+      {{ getErrorMessage("name") }}
+    </mat-error>
+    <mat-hint align="end">{{ inputName.value?.length || 0 }}/25</mat-hint>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      #inputSurname
+      maxlength="25"
+      placeholder="Surname"
+      formControlName="surname"
+      [(ngModel)]="user.surname"
+      required
+    />
+    <mat-error *ngIf="userControls.surname.invalid">{{
+      getErrorMessage("surname")
+    }}</mat-error>
+    <mat-hint align="end">{{ inputSurname.value?.length || 0 }}/25</mat-hint>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      maxlength="35"
+      placeholder="Email"
+      formControlName="email"
+      [(ngModel)]="user.email"
+      required
+    />
+    <mat-error
+      *ngIf="
+        (userControls.email.dirty || userControls.email.touched) &&
+        userControls.email.errors
+      "
+      >{{ getErrorMessage("email") }}</mat-error
+    >
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select
+      placeholder="Choose role"
+      formControlName="role"
+      [(ngModel)]="user.role"
+      require
+    >
+      <mat-option value="{{ USER_ROLES.ADMIN }}">{{
+        USER_ROLES.ADMIN | titlecase
+      }}</mat-option>
+      <mat-option value="{{ USER_ROLES.MODERATOR }}">{{
+        USER_ROLES.MODERATOR | titlecase
+      }}</mat-option>
+      <mat-option value="{{ USER_ROLES.USER }}">{{
+        USER_ROLES.USER | titlecase
+      }}</mat-option>
+    </mat-select>
+    <mat-error *ngIf="userControls.role.invalid">{{
+      getErrorMessage("role")
+    }}</mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Choose date dd/mm/yyyy"
+      [matDatepicker]="picker"
+      formControlName="registrationDate"
+      [(value)]="user.registrationDate"
+    />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-error *ngIf="userControls.registrationDate.invalid">{{
+      getErrorMessage("registrationDate")
+    }}</mat-error>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button
+    [disabled]="userForm.invalid"
+    class="mat-raised-button"
+    (click)="onSubmit()"
+  >
+    Submit
+  </button>
+  <button class="mat-raised-button mat-primary" (click)="cancel()">
+    Cancel
+  </button>
+</mat-dialog-actions>
