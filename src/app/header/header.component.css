@@ -1,0 +1,29 @@
+header {
+  color: white;
+  position: absolute;
+  height: 3em;
+  width: 100%;
+  background-color: #3f51b5;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  list-style: none;
+  padding: 0.9em 2em;
+  transition-duration: 0.2s;
+}
+
+nav li:hover {
+  cursor: pointer;
+  color: #3f51b5;
+  background-color: white;
+}
+
+nav a:visited {
+  color: white;
+ 
+}

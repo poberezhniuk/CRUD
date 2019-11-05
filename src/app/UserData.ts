@@ -6,6 +6,7 @@ export class User {
     public surname: string,
     public email: string,
     public role: string,
-    public registrationDate: string
+    public registrationDate: string,
+    public enabled: boolean
   ) {}
 }

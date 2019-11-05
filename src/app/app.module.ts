@@ -24,6 +24,9 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { DeleteDialogComponent } from "./delete-dialog/delete-dialog.component";
 import { EditDialogComponent } from "./edit-dialog/edit-dialog.component";
 import { CreateDialogComponent } from './create-dialog/create-dialog.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 const modules = [
   BrowserModule,
@@ -46,7 +49,7 @@ const modules = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, DeleteDialogComponent, EditDialogComponent, CreateDialogComponent],
+  declarations: [AppComponent, DeleteDialogComponent, EditDialogComponent, CreateDialogComponent, HeaderComponent, HomeComponent, AboutComponent],
   imports: [...modules],
   providers: [MatDatepickerModule],
   bootstrap: [AppComponent],

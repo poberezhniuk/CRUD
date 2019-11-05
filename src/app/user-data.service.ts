@@ -11,7 +11,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Doe",
         email: "jdoe@gmail.com",
         role: "ADMIN",
-        registrationDate: "3056-08-02T02:30:00.000+00:00"
+        registrationDate: "3056-08-02T02:30:00.000+00:00",
+        enabled: true
       },
       {
         id: 1,
@@ -20,7 +21,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Koe",
         email: "alex@gmail.com",
         role: "MODERATOR",
-        registrationDate: "2008-04-09T02:30:00.000+00:00"
+        registrationDate: "2008-04-09T02:30:00.000+00:00",
+        enabled: false
       },
       {
         id: 2,
@@ -29,7 +31,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Boe",
         email: "nikolai@gmail.com",
         role: "USER",
-        registrationDate: "2019-09-03T02:30:00.000+00:00"
+        registrationDate: "2019-09-03T02:30:00.000+00:00",
+        enabled: true
       },
       {
         id: 3,
@@ -38,7 +41,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Voe",
         email: "jdoe@gmail.com",
         role: "ADMIN",
-        registrationDate: "2011-03-03T02:30:00.000+00:00"
+        registrationDate: "2011-03-03T02:30:00.000+00:00",
+        enabled: false
       },
       {
         id: 4,
@@ -47,7 +51,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Roe",
         email: "alex@gmail.com",
         role: "USER",
-        registrationDate: "1993-12-01T02:30:00.000+00:00"
+        registrationDate: "1993-12-01T02:30:00.000+00:00",
+        enabled: false
       },
       {
         id: 5,
@@ -56,7 +61,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Toe",
         email: "nikolai@gmail.com",
         role: "MODERATOR",
-        registrationDate: "1996-01-01T02:30:00.000+00:00"
+        registrationDate: "1996-01-01T02:30:00.000+00:00",
+        enabled: true
       },
       {
         id: 6,
@@ -65,7 +71,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Doe",
         email: "jdoe@gmail.com",
         role: "ADMIN",
-        registrationDate: "1990-01-04T02:30:00.000+00:00"
+        registrationDate: "1990-01-04T02:30:00.000+00:00",
+        enabled: true
       },
       {
         id: 7,
@@ -74,7 +81,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Koe",
         email: "alex@gmail.com",
         role: "MODERATOR",
-        registrationDate: "1970-11-11T02:30:00.000+00:00"
+        registrationDate: "1970-11-11T02:30:00.000+00:00",
+        enabled: false
       },
       {
         id: 8,
@@ -83,7 +91,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Boe",
         email: "nikolai@gmail.com",
         role: "USER",
-        registrationDate: "1972-11-10T02:30:00.000+00:00"
+        registrationDate: "1972-11-10T02:30:00.000+00:00",
+        enabled: true
       },
       {
         id: 9,
@@ -92,7 +101,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Voe",
         email: "jdoe@gmail.com",
         role: "ADMIN",
-        registrationDate: "1976-06-12T02:30:00.000+00:00"
+        registrationDate: "1976-06-12T02:30:00.000+00:00",
+        enabled: false
       },
       {
         id: 10,
@@ -101,7 +111,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Roe",
         email: "alex@gmail.com",
         role: "USER",
-        registrationDate: "1974-12-05T02:30:00.000+00:00"
+        registrationDate: "1974-12-05T02:30:00.000+00:00",
+        enabled: true
       },
       {
         id: 11,
@@ -110,7 +121,8 @@ export class UserDataService implements InMemoryDbService {
         surname: "Toe",
         email: "nikolai@gmail.com",
         role: "MODERATOR",
-        registrationDate: "1973-05-07T02:30:00.000+00:00"
+        registrationDate: "1973-05-07T02:30:00.000+00:00",
+        enabled: true
       }
     ];
 
